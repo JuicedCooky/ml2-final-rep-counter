@@ -1,4 +1,7 @@
-yolo*.pt
+*.pt
 # ./yolo26m-pose.pt
 # ./yolo26n-pose.pt
 # ./yolo26s-pose.pt
+*.mp4
+/runs
+/.venv
