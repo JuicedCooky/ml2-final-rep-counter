@@ -64,9 +64,11 @@ class PushUps:
 
 
         # cv2.putText(annotated_frame, f"L Reps: {left_reps}", (30, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, left_color, 2)
-        cv2.putText(annotated_frame, f"L Angle: {int(left_angle)}", (30, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.7, left_color, 2)
+        if left_angle is not None:
+            cv2.putText(annotated_frame, f"L Angle: {int(left_angle)}", (30, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.7, left_color, 2)
 
-        cv2.putText(annotated_frame, f"R Angle: {int(right_angle)}", (400, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.7, right_color, 2)
+        if right_angle is not None:
+            cv2.putText(annotated_frame, f"R Angle: {int(right_angle)}", (400, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.7, right_color, 2)
         
         cv2.putText(annotated_frame, f"Body Angle: {int(body_angle)}", (30, 130), cv2.FONT_HERSHEY_SIMPLEX, 0.7, body_color, 2)
         return result

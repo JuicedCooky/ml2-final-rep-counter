@@ -35,7 +35,7 @@ class SitUps:
         body_color = (0, 255, 0)
 
         cv2.line(annotated_frame, (int(r_sh[0]), int(r_sh[1])), (int(r_hip[0]), int(r_hip[1])), right_color, 3)
-        cv2.line(annotated_frame, (int(r_hip[0]), int(r_hip[1])), (int(r_sh[0]), int(r_sh[1])), right_color, 3)
+        cv2.line(annotated_frame, (int(r_hip[0]), int(r_hip[1])), (int(r_knee[0]), int(r_knee[1])), right_color, 3)
 
         # Draw circles on the actual joints (radius=5, thickness=-1 for filled circle)
         # for pt in [l_sh, l_el, l_wr]:
