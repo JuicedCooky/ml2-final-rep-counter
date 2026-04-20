@@ -40,3 +40,9 @@ python main.py --mode situps
 Calculate angles between two keypoints to measure amount of bend.
 
 angle between vector(b->c) and vector(b->a) = atan(c - b) - atan(a - b) 
+
+# DEMO 
+## PushUps
+![til](./gifs/pushups2.gif)
+## SitUps
+![til](./gifs/situps6.gif)
